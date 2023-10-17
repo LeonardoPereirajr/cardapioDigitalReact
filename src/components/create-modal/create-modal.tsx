@@ -2,12 +2,13 @@ import { useEffect, useState } from 'react';
 import { useFoodDataMutate } from '../../hooks/useFoodDataMutate';
 import { FoodData } from '../../interface/FoodData';
 
-import "./modal.css";
+import './modal.css'
 
 interface InputProps {
     label: string,
     value: string | number,
-    updateValue(value: unknown): void
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    updateValue(value: any): void
 }   
 
 interface ModalProps {
